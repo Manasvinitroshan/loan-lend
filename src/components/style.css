@@ -1,0 +1,21 @@
+/* CenteredPaper.css */
+.centerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+  }
+  
+  .paper {
+    padding: 16px; /* Adjust padding as needed */
+    text-align: center;
+    align-items: center;
+    height: 50vh;
+    width: 30%;
+    border-radius: 100px;
+
+  }
+
+  h1{
+    font-family: 'Quicksand', sans-serif;
+  }
