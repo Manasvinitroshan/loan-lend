@@ -48,7 +48,7 @@ export const Register = (props) => {
                             id="password" 
                             placeholder="********" 
                         />
-                        <button className="submit"  onClick={() => navigate('Lend')} type="submit">Register</button>
+                        <button className="submit"  onClick={() => navigate(-1 + 'Registration')} type="submit">Register</button>
                     </form>
                     <button className="link-btn" onClick={() => navigate('Login')}>
                         Already have an account? Login here.

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Registration.css';
 
-function Registration() {
+const Registration = () => {
    const [formData, setFormData] = useState({
       firstName: '',
       lastName: '',
@@ -235,3 +235,4 @@ function Registration() {
    );
 }
 
+export {Registration}
