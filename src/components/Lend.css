@@ -5,7 +5,7 @@
     align-items: center;
     height: 120vh;
     border-radius: 2 px;
-    width: 50%;
+    width: 100%;
   
 
   }
@@ -111,4 +111,8 @@
 }
 
 
-
+.row_m{
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+}

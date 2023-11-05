@@ -5,6 +5,7 @@ import BorrowList from './components/BorrowList';
 import {ImaKms} from './components/attempt2';
 import { Login } from './components/LoginPage';
 import { Register } from './components/Register';
+import Home from './components/Home';
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
       <Route path='/Lend' element={<Lend/>}/>
       <Route path='/Registration' element={<ImaKms/>}/>
       <Route path='/BorrowList' element={<BorrowList/>}/>
+      <Route path='/Home' element={<Home/>}/>
+
     </Routes>
     </BrowserRouter>
   );
