@@ -6,6 +6,7 @@ import {ImaKms} from './components/attempt2';
 import { Login } from './components/LoginPage';
 import { Register } from './components/Register';
 
+
 function App() {
   return (
 
@@ -16,6 +17,7 @@ function App() {
       <Route path='/Register' element={<Register/>}/>
       <Route path='/Lend' element={<Lend/>}/>
       <Route path='/Registration' element={<ImaKms/>}/>
+      <Route path='/BorrowList' element={<BorrowList/>}/>
     </Routes>
     </BrowserRouter>
   );
