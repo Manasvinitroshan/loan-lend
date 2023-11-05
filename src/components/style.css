@@ -10,8 +10,8 @@
     padding: 16px; /* Adjust padding as needed */
     text-align: center;
     align-items: center;
-    height: 50vh;
-    width: 30%;
+    height: 70vh;
+    width: 50vh;
     border-radius: 100px;
 
   }
@@ -19,3 +19,31 @@
   h1{
     font-family: 'Quicksand', sans-serif;
   }
+
+  .button{
+    align-items: center;
+  }
+
+  .wrapper {
+    padding: 5px 20px;
+}
+
+.wrapper fieldset {
+    margin: 20px 0;
+}
+
+.wrapper button {
+    border: 2px solid grey;
+    border-radius: 12px;
+    padding: 10px 50px;
+
+}
+
+.wrapper input {
+    border: 2px solid grey;
+    border-radius: 12px;
+    padding: 10px 610px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

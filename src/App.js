@@ -1,11 +1,17 @@
-
-import './App.css';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Lend from './components/Lend';
+import { Box } from '@mui/material';
+import BorrowList from './components/BorrowList';
+
 function App() {
   return (
-   <div>
-    <Lend/>
-   </div>
+
+    <BrowserRouter>
+    <Routes>
+      <Route index element={<Lend/>}/>
+      <Route path='/BorrowList' element={<BorrowList/>}/>
+    </Routes>
+    </BrowserRouter>
   );
 }
 
