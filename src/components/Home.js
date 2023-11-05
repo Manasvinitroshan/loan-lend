@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill, BsFillBellFill } from 'react-icons/bs';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line, Rectangle } from 'recharts';
 import './Home.css';
 import { Paper,Typography,Avatar, Box,Grid } from '@mui/material';
 import { lightBlue } from '@mui/material/colors';
+import borrowData from './borrow.json'; // Adjust the path as needed
+
 
 function Home() {
+  const handleBorrowClick = (loanId) => {
+    // Logic to handle borrowing a loan
+    console.log(`Loan ID ${loanId} borrowed`);
+    // You would typically handle this with an API call or some other action
+  };
+
+  const [loans] = useState(borrowData); // State initialization with JSON data
   const data = [
     {
       name: 'Year 1',
@@ -55,16 +64,37 @@ function Home() {
      <Paper className='center2 paper2'>
 
      <div className='main-title center'>
-            <Typography>DASHBOARD
+            <h1>DASHBOARD
 
-              <Avatar></Avatar>
-            </Typography>
+              <div >
+              <Avatar alt="Nihanth Attaluri" src="./assets/nithu.png" />
+              </div>
+              
+            </h1>
         </div>
 
         <div className="label">
-      <div className>Active Contracts:</div>
+      <h2>Active Contracts:</h2>
     </div>
-        <Paper className='color3'></Paper>
+        <Box className='color4'>
+        
+        <tbody className='loan-table'>
+          {loans.map((loan) => (
+            <tr key={loan.id}>
+              
+              <td>{loan.name}</td>
+              <td>${loan.amount_lending.toLocaleString()}</td>
+              <td>{loan.interest_rate}%</td>
+              <td>{loan.duration} months</td>
+              <td>
+                <button onClick={() => handleBorrowClick(loan.id)} className="borrow-button">
+                  Pay Back
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+        </Box>
 
         <div className='charts'>
             <ResponsiveContainer width="100%" height="100%">

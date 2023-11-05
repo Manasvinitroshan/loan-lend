@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "profile_picture": "https://placeimg.com/100/100/people/1",
+      "name": "Alex Johnson",
+      "amount_lending": 5000,
+      "interest_rate": 5.5,
+      "duration": 24
+    },
+    {
+      "id": 2,
+      "profile_picture": "https://placeimg.com/100/100/people/2",
+      "name": "Samantha C. Brookes",
+      "amount_lending": 10000,
+      "interest_rate": 4.7,
+      "duration": 36
+    }
+ 
+  ]

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom'
 import '../App.css'
+import { signInWithEmailAndPassword} from "firebase/auth";
+import { auth } from "../components/firebase.js";
 
 export const Login = (props) => {
     const [username, setUsername] = useState('');
@@ -10,6 +12,12 @@ export const Login = (props) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(username, pass);
+        signInWithEmailAndPassword(auth, username, pass).then((userCredential) => {
+            console.log(userCredential)
+        }).catch((error) => {
+            console.log(error)
+        })
+        
     }
 
     return (
@@ -40,7 +48,7 @@ export const Login = (props) => {
                             id="password" 
                             name="password" 
                         />
-                        <button className="submit" onClick={() => navigate('Lend')} type="submit">Login</button>
+                        <button className="submit"  type="submit" onClick={() => navigate('Lend')}>Login</button>
                     </form>
                     <button className="link-btn" onClick={() => navigate('Register')}>
                         Don't have an account? Register here.

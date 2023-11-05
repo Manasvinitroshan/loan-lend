@@ -235,7 +235,7 @@ body {
     padding: 16px; /* Adjust padding as needed */
     text-align: center;
     align-items: center;
-    height: 70%;
+    height: 90%;
     width: 70%;
     border-radius: 2 px;
     margin-top: 1%;
@@ -259,6 +259,10 @@ body {
     background-color: grey;
   }
 
+  .color4{
+
+    background-color: lightblue;
+  }
 
   .label {
     height: 44px;
@@ -277,3 +281,23 @@ body {
     position: fixed;
     top: 0;
   }
+
+  .margin4{
+
+    padding-left: 40;
+  }
+
+
+  
+  h1{
+
+
+  font-family: 'Quicksand';
+
+  }
+
+  h2{
+
+    font-family: 'Quicksand';
+  }
+  

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import borrowData from './borrow.json'; // Adjust the path as needed
+import activeData from './borrow.json'; // Adjust the path as needed
 import './borrowList.css'; // Ensure this is the correct path to your CSS file
 
 const BorrowList = () => {
-  const [loans] = useState(borrowData); // State initialization with JSON data
+  const [loans] = useState(activeData); // State initialization with JSON data
 
   const handleBorrowClick = (loanId) => {
     // Logic to handle borrowing a loan
@@ -24,7 +24,7 @@ const BorrowList = () => {
       <table className="loan-table">
         <thead>
           <tr>
-            <th>Profile Picture</th>
+            
             <th>Name</th>
             <th>Amount Lending</th>
             <th>Interest Rate</th>
@@ -32,10 +32,10 @@ const BorrowList = () => {
             <th>Action</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className=''>
           {loans.map((loan) => (
             <tr key={loan.id}>
-              <td><img src={loan.profile_picture} alt={loan.name} className="profile-pic" /></td>
+              
               <td>{loan.name}</td>
               <td>${loan.amount_lending.toLocaleString()}</td>
               <td>{loan.interest_rate}%</td>

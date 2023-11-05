@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path = '/' element = {<Login/>}/>
-      <Route path='/BorrowList' element={<BorrowList/>}/>
+     
       <Route path='/Register' element={<Register/>}/>
       <Route path='/Lend' element={<Lend/>}/>
       <Route path='/Registration' element={<ImaKms/>}/>

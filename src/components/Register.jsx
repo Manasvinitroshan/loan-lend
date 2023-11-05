@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom'
 import '../App.css'
+import { createUserWithEmailAndPassword} from "firebase/auth";
+import { auth } from "../components/firebase.js";
+
 
 export const Register = (props) => {
     const [username, setUsername] = useState('');
@@ -11,6 +14,12 @@ export const Register = (props) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log({ username, name, pass });
+
+        createUserWithEmailAndPassword(auth, username, pass).then((userCredential) => {
+            console.log(userCredential)
+        }).catch((error) => {
+            console.log(error)
+        })
     }
 
     return (
@@ -58,3 +67,4 @@ export const Register = (props) => {
         </div>
     );
 }
+
