@@ -3,13 +3,15 @@ import Lend from './components/Lend';
 import { Box } from '@mui/material';
 import BorrowList from './components/BorrowList';
 
+
 function App() {
   return (
 
     <BrowserRouter>
     <Routes>
-      <Route index element={<Lend/>}/>
+     
       <Route path='/BorrowList' element={<BorrowList/>}/>
+      <Route path='/Lend' element={<Lend/>}/>
     </Routes>
     </BrowserRouter>
   );

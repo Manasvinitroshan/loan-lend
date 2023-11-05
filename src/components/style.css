@@ -4,6 +4,9 @@
     justify-content: center;
     align-items: center;
     height: 120vh;
+    border-radius: 2 px;
+  
+
   }
   
   .paper {
@@ -12,16 +15,17 @@
     align-items: center;
     height: 70vh;
     width: 50vh;
-    border-radius: 100px;
+    border-radius: 2 px;
 
   }
 
-  h1{
+  h2{
     font-family: 'Quicksand', sans-serif;
   }
 
   .button{
     align-items: center;
+    background-color: blue;
   }
 
   .wrapper {
@@ -46,4 +50,32 @@
     float: left;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.background{
+
+  background-color: lightblue;
+}
+
+.borrow{
+
+  background-color: lightblue;
+
+}
+
+.centerContainer2 {
+  display: flex;
+  justify-content: center;
+  
+  height: 75%;
+  width: 75%;
+}
+
+.inside{
+
+  background-color: #FAF9F6;
+}
+
+.center{
+  align-items: center;
 }
