@@ -1,0 +1,92 @@
+
+.wrapper {
+    padding: 5px 20px;
+  }
+  
+  .wrapper fieldset {
+    margin: 20px 0;
+  }
+  
+  .wrapper button {
+    border: 2px solid grey;
+    border-radius: 12px;
+    padding: 10px 50px;
+  
+  }
+  
+  .wrapper input {
+    border: 2px solid grey;
+    border-radius: 12px;
+    padding: 10px 610px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .personalInformation {
+    display: flex;
+    background-color: lightgray;
+  }   
+  
+  .two-thirds {
+    flex: 2;
+  }
+  
+  .one-third { 
+    flex: 1;
+  
+  }
+  
+  form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .name-field {
+    width: 48%; /* Adjusted to account for potential padding/margin */
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: flex;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .half {
+    flex: 50%;
+    padding: 10px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .submit { 
+    position: center;
+  }
+  
+  
+
+  
+  .third {
+    flex-basis: 33.333%; /* Each .third takes up one-third of the space */
+    flex-grow: 0; /* Prevent it from growing */
+    flex-shrink: 0; /* Prevent it from shrinking */
+  }
+  
+  .row .third:nth-child(2):last-child {
+    margin-right: auto;
+    margin-left: auto;
+  }
