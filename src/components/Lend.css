@@ -5,6 +5,7 @@
     align-items: center;
     height: 120vh;
     border-radius: 2 px;
+    width: 50%;
   
 
   }
@@ -16,6 +17,7 @@
     height: 70vh;
     width: 50vh;
     border-radius: 2 px;
+    margin-bottom: 20%;
 
   }
 
@@ -79,3 +81,34 @@
 .center{
   align-items: center;
 }
+
+.manas:hover,
+.manas:focus,
+.manas:active {
+  background-color: lightblue; /* No change to background color */
+  color: inherit; /* Maintain the text color */
+  outline: none; /* Remove outline on focus */
+}
+
+.manas-btn:hover,
+.manas-btn:focus,
+.manas-btn:active {
+  background-color: transparent; /* No background color */
+  color: lightblue; /* Maintain the text color */
+  text-decoration: underline; /* Optionally underline to indicate hover state */
+  outline: none; /* Remove outline on focus */
+}
+
+.submit,
+.link-btn {
+  /* Your existing button styles */
+  border: none;
+  padding: 15px;
+  margin-top: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-style: italic;
+}
+
+
+

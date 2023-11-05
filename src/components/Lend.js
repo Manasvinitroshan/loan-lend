@@ -7,7 +7,7 @@ const Lend = () => {
   return (
     <div className="centerContainer background">
         <Paper className="paper inside" elevation={0}>
-        <h2 className='font center '>Lend</h2>
+        <h2 className='font center ' style={{mb:20}}>Lend</h2>
         <div className='center'  style={{padding:'70px'}}>
         <TextField
         label="Amount"
@@ -38,7 +38,7 @@ const Lend = () => {
 
         </div>
 
-        <Button width="70%" className='button center' color="primary" >Create</Button>
+        <button className="manas" type="submit">Login</button>
    
      
   </Paper>
