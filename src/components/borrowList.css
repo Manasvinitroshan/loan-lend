@@ -1,0 +1,106 @@
+/* These are the styles for the table */
+.loan-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .loan-table th, .loan-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Ensure the table header cells take up the entire width evenly */
+  .loan-table th {
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  
+  /* Adjustments for a responsive table layout */
+  .loan-table td {
+    text-align: center; /* Center-align table data for aesthetics */
+  }
+  
+  /* Full width for table rows */
+  .loan-table tr {
+    width: 100%;
+  }
+  
+  /* Profile picture styles */
+  .profile-pic {
+    width: 50px; /* Adjust if necessary */
+    height: 50px; /* Adjust if necessary */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the images are scaled correctly within the circle */
+  }
+  
+  /* Style your button as needed */
+  button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Ensuring the table fills out the full container width */
+  .loan-table {
+    table-layout: fixed; /* This makes sure that the table layout is fixed and the columns are distributed based on width specified */
+  }
+  
+  /* Assigning width percentages to each column to spread them out */
+  .loan-table th:nth-child(1),
+  .loan-table td:nth-child(1) {
+    width: 10%; /* Adjust the percentage as needed */
+  }
+  
+  .loan-table th:nth-child(2),
+  .loan-table td:nth-child(2) {
+    width: 20%; /* Adjust the percentage as needed */
+  }
+  
+  .loan-table th:nth-child(3),
+  .loan-table td:nth-child(3),
+  .loan-table th:nth-child(4),
+  .loan-table td:nth-child(4),
+  .loan-table th:nth-child(5),
+  .loan-table td:nth-child(5) {
+    width: 15%; /* Adjust the percentage as needed */
+  }
+  
+  .loan-table th:nth-child(6),
+  .loan-table td:nth-child(6) {
+    width: 10%; /* Adjust the percentage as needed */
+  }
+  .header {
+    display: flex;
+    justify-content: flex-start; /* Aligns button to the left */
+    padding: 10px;
+    background-color: #f5f5f5; /* Light grey background */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .back-button {
+    padding: 8px 16px;
+    margin-right: 10px; /* Adds some margin to the right of the button */
+    background-color: #6c757d; /* Bootstrap-like secondary button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    background-color: #5a6268; /* Slightly darker grey on hover */
+  }
