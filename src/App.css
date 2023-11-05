@@ -36,3 +36,134 @@
     transform: rotate(360deg);
   }
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.left-side {
+  background-color: lightblue;
+  flex: 0 0 50%; /* 60% width, do not grow or shrink */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Removed padding to allow the blue background to cover all left side */
+}
+
+.right-side {
+  background-color: white;
+  flex: 0 0 50%; /* 40% width, do not grow or shrink */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Same as above, no padding */
+}
+
+.auth-form-container {
+  width: 100%; /* Use full width of the parent container */
+  max-width: 320px; /* Max width for the form container */
+  padding: 2rem;
+  margin: auto; /* Center the form container in the available space */
+  background-color: #FAF9F6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* This will vertically center the flex items */
+  align-items: center; /* This will horizontally center the flex items */
+  text-align: center; /* This will center the text of the children including h2 */
+}
+
+/* The rest of your CSS remains unchanged */
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 5rem;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+label {
+  text-align: left;
+  margin:12px;
+  padding: 0.5rem 0;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.submit {
+  border: none;
+  background-color: lightblue;
+  padding: 15px;
+  margin-top: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-style: italic;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: lightblue;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+h2 {
+  margin-top: -25px;
+  margin-bottom: 25px;
+
+}
+
+.submit,
+.link-btn {
+  /* Your existing button styles */
+  border: none;
+  padding: 15px;
+  margin-top: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-style: italic;
+}
+
+/* Override styles for .submit button on hover, focus, and active states */
+.submit:hover,
+.submit:focus,
+.submit:active {
+  background-color: lightblue; /* No change to background color */
+  color: inherit; /* Maintain the text color */
+  outline: none; /* Remove outline on focus */
+}
+
+/* Override styles for .link-btn link on hover, focus, and active states */
+.link-btn:hover,
+.link-btn:focus,
+.link-btn:active {
+  background-color: transparent; /* No background color */
+  color: lightblue; /* Maintain the text color */
+  text-decoration: underline; /* Optionally underline to indicate hover state */
+  outline: none; /* Remove outline on focus */
+}
+

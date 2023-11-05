@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import './style2.css';
+import './Registration.css';
 
-function Signup2() {
+function Registration() {
    const [formData, setFormData] = useState({
       firstName: '',
       lastName: '',
@@ -235,4 +235,3 @@ function Signup2() {
    );
 }
 
-export default Signup2;

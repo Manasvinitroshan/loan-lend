@@ -1,6 +1,7 @@
 import React from 'react'
 import { Paper, TextField,Button } from '@mui/material';
-import './style.css'
+import { useNavigate } from 'react-router-dom'
+import './Lend.css'
 
 const Lend = () => {
   return (
